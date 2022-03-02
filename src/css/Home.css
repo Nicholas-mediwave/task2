@@ -1,14 +1,15 @@
 .HomeWrap {
-  background: rgb(195, 195, 245);
+  background: #ecf4fe;
+  height: 100vh;
   font-family: sans-serif;
 }
 
 .NavWrap {
-  background: rgb(92, 94, 228);
+  background: #3a80ef;
   height: max-content;
 }
 .NavSubWrap {
-  padding: 40px 20px;
+  padding: 20px 0;
   width: 50%;
   margin: auto;
 }
@@ -22,8 +23,12 @@
 .UserProfile {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+}
+
+.DateAndUserName,
+.date,
+.UserName {
+  padding: 10px 0;
 }
 
 .DateAndUserName {
@@ -36,48 +41,72 @@
   height: 100px;
   border-radius: 50px;
   box-shadow: 0px 3px 6px #00000029;
-  margin-top: -80px;
+  flex-shrink: 0;
 }
 @media (max-width: 980px) {
   .pic {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    margin-top: -80px;
     transition: ease-in-out 300ms;
   }
 }
 
 .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 22px;
 }
 
 .UserName {
   font-size: 30px;
   font-weight: 600;
-  padding: 20px 0;
 }
 
 .Climates {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0;
 }
 
 .Climate {
   font-size: 25px;
   color: #fff;
 }
+@media (max-width: 520px) {
+  .Climate {
+    font-size: 18px;
+    transition: ease-in-out 300ms;
+  }
+}
+@media (max-width: 320px) {
+  .Climate {
+    font-size: 16px;
+    transition: ease-in-out 300ms;
+  }
+}
 
-.celcious {
-  font-weight: 100;
-  opacity: 0.5;
+.celcious span {
+  font-weight: lighter;
 }
 
 .MenusNav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(71, 71, 179);
+  background-color: #195fce;
+  overflow: auto;
+}
+
+.MenusNav::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 675px) {
+  .MenusNav {
+    justify-content: flex-start;
+  }
 }
 
 .Menu {
@@ -85,8 +114,158 @@
   font-size: 22px;
   color: #fff;
   margin: 0 10px;
+  text-decoration: none;
+}
+@media (max-width: 520px) {
+  .Menu {
+    font-size: 18px;
+    transition: ease-in-out 300ms;
+  }
 }
 
-.Menu:hover {
-  background-color: rgb(103, 103, 231);
+.HomePage {
+  background: #ecf4fe;
 }
+
+.HomeContainers {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .HomeContainers {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 980px) {
+  .HomeContainers {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 620px) {
+  .HomeContainers {
+    gap: 20px;
+  }
+}
+
+.card {
+  width: 200px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 1px #00000029;
+}
+@media (max-width: 620px) {
+  .card {
+    width: 150px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    width: 100px;
+  }
+}
+
+.CardTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circlediv {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #195fce;
+}
+
+.CardBottom {
+  margin: 20px 0;
+}
+.Cardname,
+.cardSubhand {
+  margin: 5px 0;
+}
+
+.Cardname span {
+  font-weight: 600;
+}
+
+.ActiveDivicesWrap {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 -3px 20px -5px rgb(115 115 115 / 75%);
+}
+
+.ActiveDivicesSubwrap {
+  padding: 60px 0;
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 980px) {
+  .ActiveDivicesSubwrap {
+    width: 90%;
+    transition: ease-in-out 300ms;
+  }
+}
+
+.ListMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 16px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #195fce;
+  border-radius: 34px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 0.55px;
+  border-radius: 50%;
+  background-color: #195fce;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #195fce;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Toggle switch ending */

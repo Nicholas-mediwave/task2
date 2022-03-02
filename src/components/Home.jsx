@@ -7,8 +7,12 @@ export const Home = () => {
         <div className="NavSubWrap">
           <div className="UserProfile">
             <div className="DateAndUserName">
-              <div className="date">Wednesday, 2nd July 2022</div>
-              <div className="UserName">Hello, Vasu</div>
+              <div className="date">
+                <span>Wednesday, 2nd July 2022</span>
+              </div>
+              <div className="UserName">
+                <span>Hello, Vasu</span>
+              </div>
             </div>
             <div className="profilepic">
               <div className="pic"></div>
@@ -17,25 +21,72 @@ export const Home = () => {
 
           <div className="Climates">
             <div className="Climate">
-              <div className="celcious">24° C</div>
-              <div className="WheatherType">Temperature</div>
+              <div className="celcious">
+                <span>24° C</span>
+              </div>
+              <div className="WheatherType">
+                <span>Temperature</span>
+              </div>
             </div>
             <div className="Climate">
-              <div className="celcious">47%</div>
-              <div className="WheatherType">Humidity</div>
+              <div className="celcious">
+                <span>47%</span>
+              </div>
+              <div className="WheatherType">
+                <span>Humidity</span>
+              </div>
             </div>
             <div className="Climate">
-              <div className="celcious">36 Kwh</div>
-              <div className="WheatherType">Power usage</div>
+              <div className="celcious">
+                <span>36 Kwh</span>
+              </div>
+              <div className="WheatherType">
+                <span>Power usage</span>
+              </div>
             </div>
           </div>
         </div>
         <div className="MenusNav">
-          <div className="Menu">Menu</div>
-          <div className="Menu">Menu</div>
-          <div className="Menu">Menu</div>
-          <div className="Menu">Menu</div>
-          <div className="Menu">Menu</div>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Menu"
+          >
+            Menu
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Menu"
+          >
+            Menu
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Menu"
+          >
+            Menu
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Menu"
+          >
+            Menu
+          </a>
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Menu"
+          >
+            Menu
+          </a>
         </div>
       </div>
 
@@ -43,14 +94,110 @@ export const Home = () => {
         <div className="HomeContainers">
           <div className="card">
             <div className="CardTop">
-              <div className="circle"></div>
-              <div className="radio"></div>
+              <div className="circle">
+                <div className="circlediv"></div>
+              </div>
+              <div className="radio">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
             </div>
             <div className="CardBottom">
-              <div className="Cardname">Card name</div>
-              <div className="cardSubhand">Sub Heading</div>
+              <div className="Cardname">
+                <span>Card name</span>
+              </div>
+              <div className="cardSubhand">
+                <span>Sub Heading</span>
+              </div>
             </div>
           </div>
+          <div className="card">
+            <div className="CardTop">
+              <div className="circle">
+                <div className="circlediv"></div>
+              </div>
+              <div className="radio">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div className="CardBottom">
+              <div className="Cardname">
+                <span>Card name</span>
+              </div>
+              <div className="cardSubhand">
+                <span>Sub Heading</span>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="CardTop">
+              <div className="circle">
+                <div className="circlediv"></div>
+              </div>
+              <div className="radio">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div className="CardBottom">
+              <div className="Cardname">
+                <span>Card name</span>
+              </div>
+              <div className="cardSubhand">
+                <span>Sub Heading</span>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="CardTop">
+              <div className="circle">
+                <div className="circlediv"></div>
+              </div>
+              <div className="radio">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div className="CardBottom">
+              <div className="Cardname">
+                <span>Card name</span>
+              </div>
+              <div className="cardSubhand">
+                <span>Sub Heading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="ActiveDivicesWrap">
+        <div className="ActiveDivicesSubwrap">
+          <div className="ListMain">
+            <div className="ListMainLeft">
+              <div>
+                <span>Active Devices</span>
+              </div>
+              <div>
+                <span>List of Devices</span>
+              </div>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div className="list"></div>
         </div>
       </div>
     </div>
